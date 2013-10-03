@@ -1,0 +1,33 @@
+#container {
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.w960 {
+  margin: 0px auto;
+  max-width: 96.0em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px) {
+  .w960 {
+    padding: 0em 2.0em;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}

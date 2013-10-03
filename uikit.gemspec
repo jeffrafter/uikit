@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Uikit::VERSION
   spec.authors       = ["Jeff Rafter"]
   spec.email         = ["jeffrafter@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Installs a basic set of user interface templates for your Rails application}
+  spec.summary       = %q{Rails generator for installing user interface stylesheets}
+  spec.homepage      = "https://github.com/jeffrafter/uikit"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

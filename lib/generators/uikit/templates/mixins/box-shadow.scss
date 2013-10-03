@@ -1,0 +1,6 @@
+@mixin box-shadow($shadow1, $shadow2: none, $shadow3: none, $shadow4: none, $shadow5: none) {
+  -webkit-box-shadow: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5;
+  -moz-box-shadow: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5;
+  -o-box-shadow: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5;
+  box-shadow: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5;
+}

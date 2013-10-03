@@ -1,0 +1,82 @@
+$courier: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$mono: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+
+body {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, address {
+  color: #111;
+}
+
+.header {
+  font-family: $mono;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.6em;
+  margin-bottom: 0.385em;
+  white-space:pre;
+  font-family: $courier;
+
+  &.home {
+    @extend .header;
+    font-family: $mono;
+  }
+}
+
+h2 {
+  font-size: 2.6em;
+  margin-bottom: 0.385em;
+  @extend .header;
+
+  &.home {
+    @extend .header;
+    font-family: $mono;
+  }
+}
+
+h3 {
+  font-size: 2.2em;
+  @extend .header;
+}
+
+textarea, p, address {
+  font-size: 1.7em;
+  font-family: $mono;
+  font-weight: 300;
+  line-height: 22px;
+
+  &.description{
+    font-size: 1.5em;
+  }
+
+  &.caption {
+    font-size: 1.9em;
+    font-style: italic;
+    line-height: 1.3em;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(255, 243, 42);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+}

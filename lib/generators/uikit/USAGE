@@ -1,0 +1,29 @@
+Usage:
+  rails generate uikit [options]
+
+Runtime options:
+  -f, [--force]    # Overwrite files that already exist
+  -p, [--pretend]  # Run but do not make any changes
+  -s, [--skip]     # Skip files that already exist
+  -q, [--quiet]    # Supress status output
+
+Description:
+    Installs a basic set of user interface templates for your Rails application.
+
+Example:
+    rails generate uikit:install
+
+    This will create:
+
+    app/assets/stylesheets/uikit.scss
+    app/assets/stylesheets/uikit/base.scss
+    app/assets/stylesheets/uikit/buttons.scss
+    app/assets/stylesheets/uikit/flash.scss
+    app/assets/stylesheets/uikit/fonts.scss
+    app/assets/stylesheets/uikit/forms.scss
+    app/assets/stylesheets/uikit/layout.scss
+    app/assets/stylesheets/uikit/reset.scss
+    app/assets/stylesheets/mixins/animate.scss
+    app/assets/stylesheets/mixins/border-helper.scss
+    app/assets/stylesheets/mixins/box-shadow.scss
+
