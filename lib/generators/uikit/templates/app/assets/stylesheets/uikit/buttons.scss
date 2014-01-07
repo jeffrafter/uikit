@@ -1,0 +1,41 @@
+@import "uikit/colors.scss";
+
+a.btn,
+a.btn:visited,
+a.btn:active,
+button {
+  display: inline-block;
+  border:none;
+  background-color: $button;
+  padding: 1em 2em 1em 2em;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+a.button.upper,
+button.upper {
+  text-transform: uppercase;
+}
+
+a.btn:hover,
+button:hover {
+  color: white;
+}
+
+a.btn.clear,
+a.btn.clear:visited,
+a.btn.clear:active,
+button.clear {
+  padding: 1em 1em;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+a.btn.clear:hover,
+button.clear:hover {
+  background-color: $button;
+}
+

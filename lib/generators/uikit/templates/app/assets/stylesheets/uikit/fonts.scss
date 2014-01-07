@@ -1,17 +1,20 @@
-$courier: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-$mono: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+@import "uikit/colors.scss";
+
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 
 body {
-  font-size: 10px;
+  font-family: $sans;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li, address {
-  color: #111;
+  color: $text;
 }
 
 .header {
-  font-family: $mono;
+  font-family: $sans;
   font-weight: bold;
 }
 
@@ -19,11 +22,11 @@ h1 {
   font-size: 2.6em;
   margin-bottom: 0.385em;
   white-space:pre;
-  font-family: $courier;
+  font-family: $serif;
 
   &.home {
     @extend .header;
-    font-family: $mono;
+    font-family: $sans;
   }
 }
 
@@ -34,7 +37,7 @@ h2 {
 
   &.home {
     @extend .header;
-    font-family: $mono;
+    font-family: $sans;
   }
 }
 
@@ -45,7 +48,7 @@ h3 {
 
 textarea, p, address {
   font-size: 1.7em;
-  font-family: $mono;
+  font-family: $sans;
   font-weight: 300;
   line-height: 22px;
 
@@ -68,7 +71,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: rgb(255, 243, 42);
+    color: $button;
   }
 }
 
