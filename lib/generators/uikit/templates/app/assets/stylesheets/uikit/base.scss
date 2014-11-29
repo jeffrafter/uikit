@@ -6,4 +6,27 @@ html, body {
 
 body {
   background: $background;
+  text-align: center;
+  min-height: 100%;
+  font-family: $sans;
+}
+
+h1 {
+  text-align: center;
+}
+
+div#outer {
+  height: 100%;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div#inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div#footer {
+  min-height: 4em;
 }

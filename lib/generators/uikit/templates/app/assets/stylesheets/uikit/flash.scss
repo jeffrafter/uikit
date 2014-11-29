@@ -1,10 +1,8 @@
-.flash {
-  position: absolute;
-
-  &.notice {
-    width: 100%;
-    text-align: center;
-    padding: 8px 0px;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
-  }
+#flash {
+  text-align: center;
+  background: #eee;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
 }

@@ -22,22 +22,30 @@
     <% end %>
   </head>
   <body class="<%= "#{current_controller}-#{current_action}" %> <%= content_for :classes %>">
-    <%= render 'layouts/header' %>
-
-    <div id="content">
+    <% if flash.present? %>
+    <div id="flash">
       <% flash.each do |type, msg| %>
       <p class="flash <%= type %>"><%= msg %></p>
       <% end %>
+    </div>
+    <% end %>
 
-      <%= yield %>
+    <div id="outer">
+      <div id="inner">
+        <%= render 'layouts/header' %>
+
+        <div id="content">
+          <%= yield %>
+        </div>
+      </div>
     </div>
 
     <%= render 'layouts/footer' %>
     <div id="lightbox-background"></div>
   </body>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <%= javascript_include_tag "application" %>
   <%= yield :javascripts %>
 </html>

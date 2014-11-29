@@ -1,5 +1,9 @@
 @import "uikit/colors.scss";
 
+/* Radius */
+$radius: 3px;
+
+/* Typography */
 $sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 
@@ -69,6 +73,7 @@ textarea, p, address {
 
 a {
   text-decoration: none;
+  font-family: $sans;
 
   &:hover {
     color: $button;
