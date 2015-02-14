@@ -1,3 +1,11 @@
+.field {
+  text-align: right;
+}
+
+.field.checkbox label {
+  background: red;
+}
+
 select,
 textarea,
 input[type=text],

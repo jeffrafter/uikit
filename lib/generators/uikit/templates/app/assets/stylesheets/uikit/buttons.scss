@@ -1,6 +1,6 @@
 @import "uikit/colors.scss";
 
-input[type=submit].btn,
+input[type=submit],
 a.btn,
 a.btn:visited,
 a.btn:active,
@@ -21,31 +21,33 @@ button {
   text-decoration: none;
 }
 
-input[type=submit].btn.small,
+input[type=submit].small,
 a.btn.small,
 button.small {
   font-size: 12px;
   width: 120px;
   height: 30px;
+  line-height: 30px;
 }
 
-input[type=submit].btn.upper,
+input[type=submit].upper,
 a.btn.upper,
 button.upper {
   text-transform: uppercase;
 }
 
-input[type=submit].btn:hover,
+input[type=submit]:hover,
 a.btn:hover,
 button:hover {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-input[type=submit].btn {
+input[type=submit] {
   min-width: inherit;
 }
 
+input[type=submit].clear,
 a.btn.clear,
 a.btn.clear:visited,
 a.btn.clear:active,
@@ -56,8 +58,10 @@ button.clear {
   border-radius: 5px;
 }
 
+input[type=submit].clear:hover,
 a.btn.clear:hover,
 button.clear:hover {
   background-color: $button;
 }
+
 
